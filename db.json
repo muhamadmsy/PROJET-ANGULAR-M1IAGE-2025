@@ -1,0 +1,60 @@
+{
+  "evenements": [
+    {
+      "id": "13z2",
+      "nom": "ziar fez",
+      "date": "2025-03-30",
+      "lieu": "fez",
+      "description": "ziar fez",
+      "organisateur": "21nad"
+    },
+    {
+      "id": "19z2",
+      "nom": "ziar thiacalar",
+      "date": "2025-03-26",
+      "lieu": "thiacalar",
+      "description": "ziar thiacalar",
+      "organisateur": "29nad"
+    },
+    {
+      "id": "23r1",
+      "nom": "randonee pesdestre",
+      "date": "2025-03-29",
+      "lieu": "dakar",
+      "description": "randonee pesdestre",
+      "organisateur": "21nad"
+    }
+  ],
+  "participants": [
+    {
+      "id": "14MS",
+      "prenom": "Mouhamad",
+      "nom": "SY",
+      "evenement": "13z2"
+    },
+    {
+      "id": "13OS",
+      "prenom": "Oumar",
+      "nom": "Sarr",
+      "evenement": "19z2"
+    },
+    {
+      "id": "14od",
+      "prenom": "oumar",
+      "nom": "diouf",
+      "evenement": "23r1"
+    }
+  ],
+  "organisateurs": [
+    {
+      "id": "21nad",
+      "nom": "nadjina maroc",
+      "description": "dahira nadjina maroc"
+    },
+    {
+      "id": "19SAM",
+      "nom": "SAMBA FALL",
+      "description": "EVENT PROD"
+    }
+  ]
+}
