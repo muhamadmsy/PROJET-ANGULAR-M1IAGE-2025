@@ -28,7 +28,7 @@ jobs:
       run: npm run build
     
     - name: Build Docker image
-      run: docker build -t mouhamadsy/tp_devops:latest
+      run: docker build -t mouhamadsy/tp_devops:latest .
     
     - name: Log in to Docker Hub
       run: docker login -u mouhamadsy -p dckr_pat_xg_sZ3TDDEAxS4ysIhbj13sxE2w
