@@ -1,0 +1,37 @@
+name: Build and Push Docker Image
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Install Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16
+    
+    - name: Install dependencies
+      run: npm ci --legacy-peer-deps
+    
+    - name: Build Angular application
+      run: npm run build:prod
+    
+    - name: Build Docker image
+      run: docker build -t mouhamadsy/examenangular:1.0.1 .
+    
+    - name: Log in to Docker Hub
+      run: docker login -u mouhamadsy -p dckr_pat_xg_sZ3TDDEAxS4ysIhbj13sxE2w
+    
+    - name: Push Docker image to Docker Hub
+      run: docker push mouhamadsy/examenangular:1.0.1

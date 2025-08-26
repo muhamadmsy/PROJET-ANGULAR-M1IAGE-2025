@@ -8,7 +8,7 @@ import { Organisateur } from '../model/organisateur';
 
 @Component({
   selector: 'form-evenements',
-  templateUrl: './Formulaire.component.html',
+  templateUrl: './formulaire.component.html',
   styleUrls: ['./evenements.component.css']
 })
 export class FormulaireComponent implements OnInit {
