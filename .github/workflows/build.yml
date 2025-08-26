@@ -28,10 +28,10 @@ jobs:
       run: npm run build
     
     - name: Build Docker image
-      run: docker build -t mouhamadsy/tp_devops:1.0.1 .
+      run: docker build -t mouhamadsy/tp_devops .
     
     - name: Log in to Docker Hub
       run: docker login -u mouhamadsy -p dckr_pat_xg_sZ3TDDEAxS4ysIhbj13sxE2w
     
     - name: Push Docker image to Docker Hub
-      run: docker push mouhamadsy/tp_devops:1.0.1
+      run: docker push mouhamadsy/tp_devops .
